@@ -1,0 +1,40 @@
+name: ecommerce_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  firebase_auth: ^6.1.2 # (this will be added automatically after fixing)
+  provider: ^6.1.5+1
+  intl: ^0.20.2
+  firebase_core: ^4.2.1
+  cloud_firestore: ^6.1.0
+  google_fonts: ^6.3.2
+  flutter_native_splash: ^2.4.7
+  # Add your other dependencies here
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash_logo.png
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/splash_logo.png
+  web: true
